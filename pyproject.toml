@@ -5,5 +5,15 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "fast-agent-mcp @ file:///${PROJECT_ROOT}/ext/fast-agent"
+    "fast-agent-mcp"
 ]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.uv.sources]
+fast-agent-mpc = { path = "./ext/fast-agent" }
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
