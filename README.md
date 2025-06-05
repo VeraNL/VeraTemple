@@ -41,7 +41,7 @@ Now run this curl command to invoke Ollama’s OpenAI compatible API endpoint:
 curl http://localhost:11434/v1/chat/completions \
     -H "Content-Type: application/json" \
     -d '{
-        "model": "llama2",
+        "model": "llama3.2",
         "messages": [
             {
                 "role": "system",
