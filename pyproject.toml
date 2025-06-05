@@ -1,13 +1,10 @@
 [project]
 name = "veratemple"
 version = "0.1.0"
-description = "Add your description here"
+description = "An environment agnostic, agent composition framework."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "deprecated>=1.2.18",
     "fast-agent-mcp",
 ]
-
-[tool.uv.sources]
-fast-agent-mcp = { path = "./ext/fast-agent", editable = true }
