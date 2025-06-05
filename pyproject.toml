@@ -8,8 +8,5 @@ dependencies = [
     "fast-agent-mcp"
 ]
 
-[tool.hatch.metadata]
-allow-direct-references = true
-
 [tool.uv.sources]
-fast-agent-mpc = { path = "./ext/fast-agent" }
+fast-agent-mcp = { path = "./ext/fast-agent", editable = true }

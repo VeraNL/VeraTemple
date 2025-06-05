@@ -1,9 +1,13 @@
 import asyncio
+import importlib  
+foobar = importlib.import_module("../../ext/fast-agent")
 
-from mcp_agent.core.fastagent import FastAgent
+# foobar.mcp_agent.core.fastagent.FastAgent
+
+# from ...ext.fast_agent.mcp_agent.core.fastagent import FastAgent
 
 # Create the application
-fast = FastAgent("fast-agent agent_one (mcp server)")
+fast = foobar.mcp_agent.core.fastagent.FastAgent("fast-agent agent_one (mcp server)")
 
 
 # Define the agent
