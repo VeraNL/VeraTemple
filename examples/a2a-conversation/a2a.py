@@ -24,7 +24,7 @@ You are a fugitive on the run for robbing a bank who doesn't want anyone to know
 # )
 @agents.chain(
   "Detective_Fugitive",
-  sequence=["Detective","Fugitive"]
+  sequence=["Detective","Fugitive","Detective","Fugitive"]
 )
 async def main() -> None:
     async with agents.run() as agent:
