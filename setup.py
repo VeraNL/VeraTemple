@@ -13,14 +13,15 @@ class InstallFastAgentDepsCommand(install):
             raise FileNotFoundError(f"Missing required source file for uv.lock: {source_file}")
         
         # Run uv pip sync in the correct directory
-        subprocess.check_call(['uv', 'pip', 'sync', '--system'], cwd=submodule_path)
+        subprocess.check_call(['uv', 'pip', 'sync', 'pyproject.toml'], cwd=submodule_path)
         
         install.run(self)
 
 setup(
-    name='your_project',
+    name='veratemple',
+    # arguments=[],
     version='0.1.0',
-    packages=['vera_temple'],
+    # packages=['veratemple'],
     install_requires=[
         # Root-level deps here
     ],
