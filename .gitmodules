@@ -1,0 +1,6 @@
+[submodule "ext/fast-agent"]
+	path = ext/fast-agent
+	url = https://github.com/evalstate/fast-agent.git
+[submodule "ext/VeraForge"]
+	path = ext/VeraForge
+	url = https://github.com/VeraNL/VeraForge.git
