@@ -5,6 +5,5 @@ description = "An environment agnostic, agent composition framework."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "deprecated>=1.2.18",
-    "fast-agent-mcp",
+    "fast-agent-mcp>=0.2.30",
 ]
